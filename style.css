@@ -1,3 +1,13 @@
+body {
+  background-color: #2e321c;
+  color: #f1f1f1;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
 h2 {
     margin-bottom: 0;
 
@@ -13,7 +23,7 @@ div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-  
+    width: 250px;
   }
   
   div.gallery:hover {
@@ -28,4 +38,27 @@ div.gallery {
   div.desc {
     padding: 15px;
     text-align: center;
+    background-color: aliceblue;
+    color: black;
   }
+
+  div.main{
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  div.ImgGallery{
+    margin: 0 auto;
+    width: 70%;
+    
+  }
+
+  link {
+    color: white;
+    
+  }
+
+  :any-link{
+    color: wheat;
+  }
+  
