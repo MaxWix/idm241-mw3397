@@ -1,11 +1,12 @@
 body {
-  background-color: #2e321c;
-  color: #f1f1f1;
+  background-color: #fafafa;
+  
  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -44,7 +45,7 @@ div.gallery {
 
   div.main{
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
   }
 
   div.ImgGallery{
@@ -54,11 +55,101 @@ div.gallery {
   }
 
   link {
-    color: white;
+    color: blue;
     
   }
 
   :any-link{
-    color: wheat;
+    color: blue;
   }
   
+  .heading {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    padding: 3.5rem 0;
+    color: #1a1a1a;
+  }
+  
+  .heading span {
+    display: block;
+  }
+  
+  .alphaGallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+  }
+  
+  .alphaGalleryItem {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 24rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: .5rem;
+    overflow:visible;
+    
+  }
+  
+  .alphaGalleryImage {
+    display: block;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+      transition: transform 400ms ease-out;
+      
+  }
+  
+  .alphaGalleryImage:hover + .recipeCaption {
+    color: green;
+    
+  }
+  
+  .alphaGalleryImage:hover {
+    cursor:grab;
+  }
+  
+  .recipeCaption:hover {
+    color: green;
+    cursor: grab;
+  }
+  
+  .recipeCaption {
+      
+  }
+  
+  .recipeTitle {
+  margin: .5rem 0 0 0;
+  text-align: start;
+  }
+  
+  .recipeDescription{
+      margin-top: .5rem;
+      color: black;
+  }
+  
+  /*
+  
+  The following rule will only run if your browser supports CSS grid.
+  
+  Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+  
+  */
+  
+  @supports (display: grid) {
+    .alphaGallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+      grid-gap: 2rem;
+      margin: auto 1rem auto 1rem;
+    }
+  
+    .alphGallery,
+    .alphaGalleryItem {
+   
+    }
+  
+      
+  }
