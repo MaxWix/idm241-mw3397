@@ -108,17 +108,17 @@ div.gallery {
   }
   
   .alphaGalleryImage:hover {
-    cursor:grab;
+    cursor:pointer;
   }
   
   .recipeCaption:hover {
     color: green;
-    cursor: grab;
+    cursor: pointer;
   }
   
-  .recipeCaption {
+  /* .recipeCaption {
       
-  }
+  } */
   
   .recipeTitle {
   margin: .5rem 0 0 0;
@@ -146,10 +146,10 @@ div.gallery {
       margin: auto 1rem auto 1rem;
     }
   
-    .alphGallery,
+    /* .alphGallery,
     .alphaGalleryItem {
    
     }
-  
+   */
       
   }
