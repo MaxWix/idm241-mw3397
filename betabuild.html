@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>alpha description</title>
+    <link rel="stylesheet" href="betaBuildStyle.css" />
+  </head>
+  <body>
+    <h1>Good Reads Best-Books Microinteraction</h1>
+
+    <a
+      href="https://www.goodreads.com/choiceawards/best-books-2022"
+      target="_blank"
+      >https://www.goodreads.com/choiceawards/best-books-2022</a
+    >
+
+    <div class="category">
+      <div class="category-books">
+        <div class="book">
+          <h4>Fiction</h4>
+          <img
+            class="bookimg"
+            src="images/bestReads1.jpeg"
+            alt="Book 1 Cover"
+          />
+          <div class="container">
+            <div class="btn-wrapper">
+              <button>
+                <span class="readMore">Want to Read</span>
+                <img
+                  class="wtrimg"
+                  src="images/down-arrow-svgrepo-com.svg"
+                  alt=""
+                />
+              </button>
+              <div class="dropdownCon">
+                <div class="dropdown">
+                  <ul>
+                    <li class="buttonList">
+                      <a href="">
+                        <span>Want to Read</span>
+                      </a>
+                    </li>
+                    <li class="buttonList">
+                      <a href="">
+                        <span>Currently Reading</span>
+                      </a>
+                    </li>
+                    <li class="buttonList">
+                      <a href="">
+                        <span>Read</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="star">
+            <span class="rtb">rate this book</span>
+            <div class="star-wrapper">
+              <a href="" class="fas fa-star s1"></a>
+              <a href="" class="fas fa-star s2"></a>
+              <a href="" class="fas fa-star s3"></a>
+              <a href="" class="fas fa-star s4"></a>
+              <a href="" class="fas fa-star s5"></a>
+            </div>
+          </div>
+          <script src="https://kit.fontawesome.com/5ea815c1d0.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <!-- You can add more category divs as needed for your microinteraction example -->
+
+    <div class="main">
+      <h2>Triggers:</h2>
+      <li>hover on book</li>
+      <li>hover off book</li>
+      <li>click on "want to read" drop-down</li>
+
+      <h2>Rules:</h2>
+      <li>
+        On hover of book: a drop shadow will fade in around the entire div and
+        the book cover img will scale up slighty (zoom in)
+      </li>
+      <li>
+        Off hover of book: the drop shadow will fade out and the book will scale
+        back down to it's original size
+      </li>
+      <li>
+        On click of "want to read" drop down: a drop down menu that is the same
+        width as the "want to read" button will slide down and the different
+        options will fade in
+      </li>
+      <h2>Feedback:</h2>
+      <li>
+        On hover of book: a drop shadow will fade in around the entire div and
+        the book cover img will scale up slighty (zoom in)
+      </li>
+      <li>
+        Off hover of book: the drop shadow will fade out and the book will scale
+        back down to it's original size
+      </li>
+      <li>
+        On click of "want to read" drop down: a drop down menu that is the same
+        width as the "want to read" button will slide down and the different
+        options will fade in
+      </li>
+      <h2>Loops and Modes:</h2>
+      <li>"want to read" drop down appears as a mode</li>
+      <li>no loops</li>
+    </div>
+  </body>
+</html>

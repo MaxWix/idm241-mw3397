@@ -1,0 +1,124 @@
+body {
+  background-color: #fafafa;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  max-width: 750px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: aliceblue;
+  color: black;
+}
+
+div.main {
+  margin: 0 auto;
+  width: 70%;
+}
+
+link {
+  color: blue;
+}
+
+:any-link {
+  color: blue;
+}
+
+.heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+
+.category {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.category-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.category-description {
+  font-size: 16px;
+}
+
+.category-books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book {
+  width: 30%;
+  margin: 1%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: center;
+}
+
+.bookimg {
+  max-width: 100%;
+  height: auto;
+}
+
+.book-title {
+  font-weight: bold;
+}
+
+.book-description {
+  font-size: 14px;
+}
+
+.wtrimg {
+  max-width: 15px;
+}
+
+button {
+  background-color: rgb(102, 156, 107);
+  border-radius: 0.3em;
+  padding: 1em 1.5em 1em 1em;
+  display: flex;
+  cursor: pointer;
+
+  span {
+    margin-left: 0.3em;
+  }
+
+  &:hover {
+    background: rgb(102, 154, 105);
+
+    .dropdown {
+      display: block;
+    }
+  }
+}
+
+.dropdown {
+  background: white;
+  border-radius: 0.3em;
+  position: absolute;
+  left: 0.1em;
+}
