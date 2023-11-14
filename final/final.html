@@ -2,76 +2,24 @@
 <html>
   <head>
     <title>alpha description</title>
-    <link rel="stylesheet" href="betaBuildStyle.css" />
+    <link rel="stylesheet" href="finalstyle.css" />
   </head>
   <body>
     <h1>Good Reads Best-Books Microinteraction</h1>
-    <div class="category">
-      <div class="category-books">
-        <div class="book">
-          <h4>Fiction</h4>
-          <img
-            class="bookimg"
-            src="images/bestReads1.jpeg"
-            alt="Book 1 Cover"
-          />
-          <div class="container">
-            <div class="btn-wrapper">
-              <button>
-                <span class="wtr">Want to Read</span>
-                <img
-                  class="wtrimg"
-                  src="images/down-arrow-svgrepo-com.svg"
-                  alt=""
-                />
-              </button>
-              <div class="dropdownCon">
-                <div class="dropdown">
-                  <ul>
-                    <li class="buttonList">
-                      <a href="">
-                        <span>Want to Read</span>
-                      </a>
-                    </li>
-                    <li class="buttonList">
-                      <a href="">
-                        <span>Currently Reading</span>
-                      </a>
-                    </li>
-                    <li class="buttonList">
-                      <a href="">
-                        <span>Read</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="star">
-            <span class="rtb">rate this book</span>
-            <div class="star-wrapper">
-              <a href="" class="fas fa-star s1"></a>
-              <a href="" class="fas fa-star s2"></a>
-              <a href="" class="fas fa-star s3"></a>
-              <a href="" class="fas fa-star s4"></a>
-              <a href="" class="fas fa-star s5"></a>
-            </div>
-          </div>
-          <script src="https://kit.fontawesome.com/5ea815c1d0.js"></script>
-        </div>
-      </div>
-    </div>
-
-    <!-- You can add more category divs as needed for your microinteraction example -->
-
     <div class="main">
+      <a
+        href="https://www.goodreads.com/choiceawards/best-books-2022"
+        target="_blank"
+        >https://www.goodreads.com/choiceawards/best-books-2022</a
+      >
+
       <h2>Triggers:</h2>
       <ol>
         <li>hover on/off container</li>
         <li>hover on/off "want to read" drop-down</li>
         <li>hover on/off stars</li>
         <li>on click of "want to read" menu item</li>
+        <li>on click of stars</li>
       </ol>
 
       <h2>Rules:</h2>
@@ -101,6 +49,11 @@
         <li>
           on click of "want to read" menu item: the dropdown menu will slide up
           and fade out to its originial, hidden position
+        </li>
+        <li>
+          on click of stars: stars that are filled from hover will remain
+          filled. Star that is clicked on will scale down slightly and then
+          scale back to hover size and remain that size (bounce animation)
         </li>
       </ol>
 
@@ -132,13 +85,57 @@
           on click of "want to read" menu item: the dropdown menu will slide up
           and fade out to its originial, hidden position
         </li>
+        <li>
+          on click of stars: stars that are filled from hover will remain
+          filled. Star that is clicked on will scale down slightly and then
+          scale back to hover size and remain that size (bounce animation)
+        </li>
       </ol>
 
       <h2>Loops and Modes:</h2>
-      <ol>
-        <li>"want to read" drop down appears as a mode</li>
-        <li>no loops</li>
-      </ol>
+      <li>"want to read" drop down appears as a mode</li>
+      <li>no loops</li>
+    </div>
+    <div class="imgGalleryCon">
+      <div class="ImgGallery">
+        <div class="gallery g1">
+          <a target="_blank" href="../images/GoodreadsNoHover.png">
+            <img
+              src="../images/GoodreadsNoHover.png"
+              alt=""
+              width=""
+              height=""
+            />
+          </a>
+          <div class="desc">No hover</div>
+        </div>
+
+        <div class="gallery g2">
+          <a target="_blank" href="../images/GoodreadsNoHover.png">
+            <img
+              src="../images/GoodreadsOnHover.png"
+              alt=""
+              width=""
+              height=""
+            />
+          </a>
+          <div class="desc">on hover</div>
+        </div>
+
+        <div class="gallery g3">
+          <a target="_blank" href="../images/goodreadsRead.png">
+            <img src="../images/goodreadsRead.png" alt="" />
+          </a>
+          <div class="desc">"want to read" hover</div>
+        </div>
+
+        <div class="gallery g4">
+          <a target="_blank" href="../images/goodreadsStars.png">
+            <img src="../images/goodreadsStars.png" alt="" />
+          </a>
+          <div class="desc">Stars on click/hover</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

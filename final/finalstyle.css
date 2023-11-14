@@ -1,0 +1,124 @@
+body {
+  background-color: #fafafa;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+
+  max-width: 750px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: aliceblue;
+  color: black;
+}
+
+div.main {
+  margin: 0 auto;
+  width: 70%;
+}
+
+div.ImgGallery {
+  width: 100%;
+}
+
+.imgGalleryCon {
+  width: 100%;
+  margin: 0 auto;
+}
+
+link {
+  color: blue;
+}
+
+:any-link {
+  color: blue;
+}
+
+.heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+
+.heading span {
+  display: block;
+}
+
+@media screen and (min-width: 977px) {
+  .ImgGalleryCon {
+    width: 70%;
+  }
+
+  .ImgGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    width: 70% !important;
+    margin: 1rem auto;
+    row-gap: 1rem;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 977px) and (min-width: 540px) {
+  .ImgGallery {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 1rem;
+    row-gap: 1rem;
+  }
+
+  .gallery {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .ImgGallery {
+    display: grid;
+    place-content: center;
+    margin: 1rem 1rem;
+    row-gap: 1rem;
+  }
+
+  .gallery {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

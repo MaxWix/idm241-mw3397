@@ -2,6 +2,7 @@ body {
   background-color: #ffffff;
 
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5rem;
 }
 
 h1 {
@@ -20,6 +21,10 @@ h4 {
 p {
   margin-top: 0;
   max-width: 750px;
+}
+
+ol {
+  margin: 0.5rem 0 0;
 }
 
 div.desc {
@@ -84,6 +89,7 @@ link {
 
 .book:hover {
   background-color: #f1f1f1;
+  cursor: pointer;
 }
 
 .bookimg {
@@ -118,7 +124,7 @@ span {
   margin-left: 0.3em;
 }
 
-.readMore {
+.wtr {
   color: #fff;
   font-weight: bold;
 }
@@ -141,7 +147,8 @@ button:hover {
   width: 70%;
   box-sizing: border-box;
   transform: translateY(-1em);
-  transition: transform 0.5s;
+  opacity: 0;
+  transition: all 0.25s ease-out;
   visibility: hidden;
   margin: 0 auto;
   overflow: hidden;
@@ -174,6 +181,8 @@ ul {
   display: block;
   visibility: visible;
   transform: translateY(0);
+  opacity: 1;
+  transition: all 0.25s ease-in;
 }
 
 .btn-wrapper:hover {
@@ -193,12 +202,16 @@ ul {
   box-sizing: border-box;
 }
 
+.star-wrapper:hover {
+  cursor: pointer;
+}
+
 .star-wrapper a {
   font-size: 1em;
   color: grey;
   text-decoration: none;
   transition: all 0.5s;
-  margin: 4px;
+  margin: 0;
 }
 .star-wrapper a:hover {
   color: gold;
