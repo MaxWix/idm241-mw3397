@@ -19,6 +19,14 @@ p {
   max-width: 750px;
 }
 
+a {
+  color: rgb(102, 156, 107);
+}
+
+a:visited {
+  color: rgb(102, 156, 107);
+}
+
 div.gallery {
   border: 1px solid #ccc;
 }
@@ -30,13 +38,15 @@ div.gallery:hover {
 div.gallery img {
   width: 100%;
   height: auto;
+  aspect-ratio: 236/488;
 }
 
 div.desc {
-  padding: 15px;
+  padding: 1rem;
   text-align: center;
-  background-color: aliceblue;
-  color: black;
+  background-color: rgb(102, 156, 107);
+  color: white;
+  align-self: baseline;
 }
 
 div.main {
@@ -46,6 +56,12 @@ div.main {
 
 div.ImgGallery {
   width: 100%;
+}
+
+.header {
+  background-color: rgb(102, 156, 107);
+  padding: 2rem;
+  margin-bottom: 1rem;
 }
 
 .imgGalleryCon {
@@ -73,6 +89,10 @@ link {
 
 .heading span {
   display: block;
+}
+
+.descTitle {
+  color: rgb(102, 156, 107);
 }
 
 @media screen and (min-width: 977px) {

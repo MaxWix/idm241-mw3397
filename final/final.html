@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>alpha description</title>
+    <title>Idm 241 Final Description - Max Wix</title>
     <link rel="stylesheet" href="finalstyle.css" />
   </head>
   <body>
-    <h1>Good Reads Best-Books Microinteraction</h1>
+    <div class="header">
+      <h1>Idm 241 Final Description - Max Wix</h1>
+    </div>
     <div class="main">
       <a
         href="https://www.goodreads.com/choiceawards/best-books-2022"
@@ -13,7 +15,7 @@
         >https://www.goodreads.com/choiceawards/best-books-2022</a
       >
 
-      <h2>Triggers:</h2>
+      <h2 class="descTitle">Triggers:</h2>
       <ol>
         <li>hover on/off container</li>
         <li>hover on/off "want to read" drop-down</li>
@@ -22,29 +24,100 @@
         <li>on click of stars</li>
       </ol>
 
-      <h2>Rules:</h2>
+      <h2 class="descTitle">Rules:</h2>
       <ol>
-        <li>On hover on container: box turns to a darker grey</li>
-        <li>Off hover off container: boxs returns to lighter greay</li>
         <li>
-          On hover on "want to read" drop down: a drop down menu, with "want to
-          read" "currently reading" and "read" options, that is the same width
-          as the "want to read" button will slide down and fade in
+          On hover on whole container: box fades to a darker grey and cursor
+          will turn to pointer.
+        </li>
+        <li>
+          Off hover off container: boxs returns to original grey and cursor will
+          return to default.
+        </li>
+        <li>
+          On hover on "want to read" drop down: a drop down menu with "want to
+          read", "currently reading", and "read" options, that is the same width
+          as the "want to read" button will slide down and fade in and cursor
+          will turn to pointer.
         </li>
         <li>
           On hover off "want to read" drop down: the dropdown menu will slide up
-          and fade out to its originial, hidden position
+          and fade out to its originial, hidden position and cursor will return
+          to default.
+        </li>
+        <li>
+          On hover on "want to read" menu item: div behind menu item text will
+          fade to gray and cursor will turn to pointer.
+        </li>
+        <li>
+          On hover off "want to read" menu item: div behind menu item text will
+          fade back original color and cursor will return to default.
         </li>
         <li>
           On hover on stars: Stars will fade in with yellow, the number of stars
           that are filled from left to right directly coorelates with which star
           is being hovered over (1st star is on the left, last star is on the
-          right). Specific star that is being hovered over will scale up.
+          right). Specific star that is being hovered over will scale up and
+          cursor will turn to pointer.
         </li>
         <li>
           on hover off stars: All stars that were filled with yellow will fade
           back to grey, specific star that was being hovered on will scale back
-          down to original size.
+          down to original size and cursor will return to default.
+        </li>
+        <li>
+          on click of "want to read" menu item: the dropdown menu will slide up
+          and fade out to its originial, hidden position. Database updated based
+          on menu item selected.
+        </li>
+        <li>
+          on click of stars: stars that are filled from hover will remain
+          filled. Star that is clicked on will scale down slightly and then
+          scale back to hover size and remain that size (bounce animation).
+          Database updated based on
+        </li>
+      </ol>
+
+      <h2 class="descTitle">Feedback:</h2>
+      <ol>
+        <li>
+          On hover on whole container: box fades to a darker grey and cursor
+          will turn to pointer.
+        </li>
+        <li>
+          Off hover off container: boxs returns to original grey and cursor will
+          return to default.
+        </li>
+        <li>
+          On hover on "want to read" drop down: a drop down menu with "want to
+          read", "currently reading", and "read" options, that is the same width
+          as the "want to read" button will slide down and fade in and cursor
+          will turn to pointer.
+        </li>
+        <li>
+          On hover off "want to read" drop down: the dropdown menu will slide up
+          and fade out to its originial, hidden position and cursor will return
+          to default.
+        </li>
+        <li>
+          On hover on "want to read" menu item: div behind menu item text will
+          fade to gray and cursor will turn to pointer.
+        </li>
+        <li>
+          On hover off "want to read" menu item: div behind menu item text will
+          fade back original color and cursor will return to default.
+        </li>
+        <li>
+          On hover on stars: Stars will fade in with yellow, the number of stars
+          that are filled from left to right directly coorelates with which star
+          is being hovered over (1st star is on the left, last star is on the
+          right). Specific star that is being hovered over will scale up and
+          cursor will turn to pointer.
+        </li>
+        <li>
+          on hover off stars: All stars that were filled with yellow will fade
+          back to grey, specific star that was being hovered on will scale back
+          down to original size and cursor will return to default.
         </li>
         <li>
           on click of "want to read" menu item: the dropdown menu will slide up
@@ -57,83 +130,93 @@
         </li>
       </ol>
 
-      <h2>Feedback:</h2>
+      <h2 class="descTitle">Loops and Modes:</h2>
       <ol>
-        <li>On hover on container: box turns to a darker grey</li>
-        <li>Off hover off container: boxs returns to lighter greay</li>
-        <li>
-          On hover on "want to read" drop down: a drop down menu, with "want to
-          read" "currently reading" and "read" options, that is the same width
-          as the "want to read" button will slide down and fade in
-        </li>
-        <li>
-          On hover off "want to read" drop down: the dropdown menu will slide up
-          and fade out to its originial, hidden position
-        </li>
-        <li>
-          On hover on stars: Stars will fade in with yellow, the number of stars
-          that are filled from left to right directly coorelates with which star
-          is being hovered over (1st star is on the left, last star is on the
-          right). Specific star that is being hovered over will scale up.
-        </li>
-        <li>
-          on hover off stars: All stars that were filled with yellow will fade
-          back to grey, specific star that was being hovered on will scale back
-          down to original size.
-        </li>
-        <li>
-          on click of "want to read" menu item: the dropdown menu will slide up
-          and fade out to its originial, hidden position
-        </li>
-        <li>
-          on click of stars: stars that are filled from hover will remain
-          filled. Star that is clicked on will scale down slightly and then
-          scale back to hover size and remain that size (bounce animation)
-        </li>
+        <li>"want to read" drop down appears as a mode</li>
+        <li>no loops</li>
       </ol>
-
-      <h2>Loops and Modes:</h2>
-      <li>"want to read" drop down appears as a mode</li>
-      <li>no loops</li>
     </div>
     <div class="imgGalleryCon">
       <div class="ImgGallery">
         <div class="gallery g1">
-          <a target="_blank" href="../images/GoodreadsNoHover.png">
+          <a target="_blank" href="../images/wholeDivNoHover.png">
             <img
-              src="../images/GoodreadsNoHover.png"
+              src="../images/wholeDivNoHover.png"
               alt=""
               width=""
               height=""
             />
           </a>
-          <div class="desc">No hover</div>
+          <div class="descCon">
+            <div class="desc">Whole Container Off Hover</div>
+          </div>
         </div>
 
         <div class="gallery g2">
-          <a target="_blank" href="../images/GoodreadsNoHover.png">
-            <img
-              src="../images/GoodreadsOnHover.png"
-              alt=""
-              width=""
-              height=""
-            />
+          <a target="_blank" href="../images/wholeDivHover.png">
+            <img src="../images/wholeDivHover.png" alt="" width="" height="" />
           </a>
-          <div class="desc">on hover</div>
+          <div class="descCon">
+            <div class="desc">Whole Container On Hover</div>
+          </div>
         </div>
 
         <div class="gallery g3">
-          <a target="_blank" href="../images/goodreadsRead.png">
-            <img src="../images/goodreadsRead.png" alt="" />
+          <a target="_blank" href="../images/wtrHover.png">
+            <img src="../images/wtrHover.png" alt="" />
           </a>
-          <div class="desc">"want to read" hover</div>
+          <div class="descCon">
+            <div class="desc">"want to read" button on hover</div>
+          </div>
         </div>
 
         <div class="gallery g4">
-          <a target="_blank" href="../images/goodreadsStars.png">
-            <img src="../images/goodreadsStars.png" alt="" />
+          <a target="_blank" href="../images/wtrOffHover.png">
+            <img src="../images/wtrOffHover.png" alt="" />
           </a>
-          <div class="desc">Stars on click/hover</div>
+          <div class="desc">"want to read" button off hover</div>
+        </div>
+
+        <div class="gallery g4">
+          <a target="_blank" href="../images/wtrMenuHover.png">
+            <img src="../images/wtrMenuHover.png" alt="" />
+          </a>
+          <div class="desc">"want to read" menu item on hover</div>
+        </div>
+
+        <div class="gallery g4">
+          <a target="_blank" href="../images/wtrMenuOffHover.png">
+            <img src="../images/wtrMenuOffHover.png" alt="" />
+          </a>
+          <div class="desc">"want to read" menu item off hover</div>
+        </div>
+
+        <div class="gallery g4">
+          <a target="_blank" href="../images/wtrMenuItemAfterClick.png">
+            <img src="../images/wtrMenuItemAfterClick.png" alt="" />
+          </a>
+          <div class="desc">after "want to read" menu item click</div>
+        </div>
+
+        <div class="gallery g4">
+          <a target="_blank" href="../images/starsNoHover.png">
+            <img src="../images/starsNoHover.png" alt="" />
+          </a>
+          <div class="desc">Stars No Hover</div>
+        </div>
+
+        <div class="gallery g4">
+          <a target="_blank" href="../images/StarsHover.png">
+            <img src="../images/StarsHover.png" alt="" />
+          </a>
+          <div class="desc">Stars On Hover</div>
+        </div>
+
+        <div class="gallery g4">
+          <a target="_blank" href="../images/StarsClick.png">
+            <img src="../images/StarsClick.png" alt="" />
+          </a>
+          <div class="desc">Stars After Click</div>
         </div>
       </div>
     </div>
