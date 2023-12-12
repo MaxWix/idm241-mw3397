@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Build</title>
+    <link rel="stylesheet" href="finalBuildStyle.css" />
+  </head>
+  <body>
+    <h1>Good Reads Best-Books Microinteraction</h1>
+    <div class="category">
+      <div class="category-books">
+        <div class="book">
+          <h4>Fiction</h4>
+          <img
+            class="bookimg"
+            src="./images/bestReads1.jpeg"
+            alt="Book 1 Cover"
+          />
+          <div class="container">
+            <div class="btn-wrapper">
+              <div class="btn-hover">
+                <button class="wtrBtn">
+                  <span class="wtr">Reading Status</span>
+                  <svg
+                    class="wtrimg"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewbox="0 0 800 800"
+                    style="enable-background: new 0 0 800 800"
+                    xml:space="preserve"
+                  >
+                    <style type="text/css">
+                      .st0 {
+                        fill: #100f0f;
+                      }
+                    </style>
+                    <path
+                      id="XMLID_24_"
+                      class="st0"
+                      d="M763.6,0H36.4C16.3,0,0,16.3,0,36.4v727.3c0,20,16.3,36.3,36.4,36.3h727.3
+                  c20.1,0,36.4-16.3,36.4-36.4V36.4C800,16.3,783.7,0,763.6,0z
+                  M619.7,328.7l-194,194c-6.8,6.8-16.1,10.7-25.7,10.7
+                  s-18.9-3.8-25.7-10.7l-194-194c-14.2-14.2-14.2-37.2,0-51.4c14.2-14.2,37.2-14.2,51.4,0L400,445.5l168.2-168.2
+                  c14.2-14.2,37.2-14.2,51.4,0C633.9,291.5,633.9,314.5,619.7,328.7z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="dropdownCon">
+                <div class="dropdown">
+                  <ul class="dUl">
+                    <li class="buttonList">
+                      <div class="btlCon">
+                        <span>Want to Read</span>
+                      </div>
+                    </li>
+                    <li class="buttonList">
+                      <div class="btlCon">
+                        <span>Currently Reading</span>
+                      </div>
+                    </li>
+                    <li class="buttonList">
+                      <div class="btlCon">
+                        <span>Read</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ratings-wrapper">
+            <span class="rtb">Rate this book</span>
+            <div data-productid="39" class="ratings">
+              <span
+                data-rating="5"
+                class="fas fa-star s1"
+                aria-hidden="true"
+              ></span>
+              <span
+                data-rating="4"
+                class="fas fa-star s1"
+                aria-hidden="true"
+              ></span>
+              <span
+                data-rating="3"
+                class="fas fa-star s1"
+                aria-hidden="true"
+              ></span>
+              <span
+                data-rating="2"
+                class="fas fa-star s1"
+                aria-hidden="true"
+              ></span>
+              <span
+                data-rating="1"
+                class="fas fa-star s1"
+                aria-hidden="true"
+              ></span>
+              <script src="https://kit.fontawesome.com/5ea815c1d0.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div>
+
+    <div class="main">
+      <h2>Triggers:</h2>
+      <ul>
+        <li>Hover on/off the book</li>
+        <li>Hover on/off the "Reading Status" drop-down</li>
+        <li>Hover on/off "Reading Status" menu items</li>
+        <li>On click of "Reading Status" menu item</li>
+        <li>Hover on/off the stars when empty</li>
+        <li>
+          Hover on/off the stars when selection has already been made (some or
+          all stars are filled)
+        </li>
+        <li>On click of Stars</li>
+        <li>
+          On click of a new star when a selection has already been made (some or
+          all stars are filled
+        </li>
+        <li>On click of a star that was previously selected</li>
+      </ul>
+
+      <h2>Rules:</h2>
+      <ul>
+        <li>
+          On hover on the book: A white drop shadow fades in 4 pixels down and 4
+          pixels right from the book
+        </li>
+        <li>
+          Off hover off container: The white drops shadow fades out back into
+          the book
+        </li>
+        <li>
+          On hover on "Reading Status" drop down: a drop down menu with "want to
+          read", "currently reading", and "read" options that is the same width
+          as the "Reading Status" button will slide down and fade in.
+        </li>
+        <li>
+          On hover off "Reading Status" drop down: the dropdown menu will slide
+          up and fade out to its original, hidden position
+        </li>
+        <li>
+          On hover on "Reading Status" menu item: div behind menu item text will
+          fade to gray and cursor will turn to pointer.
+        </li>
+        <li>
+          On hover off "Reading Status" menu item: div behind menu item text
+          will fade back original color and cursor will return to default.
+        </li>
+        <li>
+          on click of "Reading Status" menu item: the dropdown menu will slide
+          up and fade out to its original, hidden position. The text of the
+          specific menu item clicked will replace the "Reading Status" text.
+          Menu item selection logged to local storage and database updated based
+          on menu item selected.
+        </li>
+        <li>
+          On hover on stars when previously empty: Stars will fade in with
+          yellow, the number of stars that are filled from left to right
+          directly correlates with which star is being hovered over (1st star is
+          on the left, last star is on the right). Specific star that is being
+          hovered over will scale up and cursor will turn to pointer.
+        </li>
+        <li>
+          on hover off stars when previously empty: All stars that were filled
+          with yellow will fade back to grey, specific star that was being
+          hovered on will scale back down to original size and cursor will
+          return to default.
+        </li>
+        <li>
+          hover on the stars when selection has already been made (some or all
+          stars are filled): Star being hovered on will fade in yellow if it was
+          previously unselected. The number of stars that are filled from left
+          to right directly correlates with which star is being hovered over
+          (1st star is on the left, last star is on the right). Any star that
+          was previously selected to the right of the star being hovered on, if
+          applicable, will fade to its original gray. Specific star that is
+          being hovered over will scale up and cursor will turn to pointer.
+        </li>
+        <li>
+          hover off the stars when selection has already been made (some or all
+          stars are filled): All stars that were previously selected to the
+          right of the star being hovered on, if applicable, will fade back to
+          its previously selected yellow. The specific star that was being
+          hovered on will scale back down to its original size and cursor will
+          return to default.
+        </li>
+        <li>
+          on click of stars: The stars that are filled from hover will remain
+          filled. Star that is clicked on will scale down to original size when
+          hovered off. Star selection logged to local storage and database
+          updated based on Star selected.
+        </li>
+        <li>
+          On click of a new star when a selection has already been made (some or
+          all stars are filled): The Stars that are filled from hover will
+          remain filled. Star that is clicked on will scale down to original
+          size when hovered off. Star selection logged to local storage and
+          database updated based on Star selected.
+        </li>
+        <li>
+          On click of a star that was previously selected: All stars that were
+          filled with yellow will fade back to grey. Lack of star selection
+          logged to local storage and database.
+        </li>
+      </ul>
+
+      <h2>Feedback:</h2>
+      <ul>
+        <li>
+          On hover on the book: A white drop shadow fades in 4 pixels down and 4
+          pixels right from the book
+        </li>
+        <li>
+          Off hover off container: The white drops shadow fades out back into
+          the book
+        </li>
+        <li>
+          On hover on "Reading Status" drop down: a drop down menu with "want to
+          read", "currently reading", and "read" options that is the same width
+          as the "Reading Status" button will slide down and fade in.
+        </li>
+        <li>
+          On hover off "Reading Status" drop down: the dropdown menu will slide
+          up and fade out to its original, hidden position
+        </li>
+        <li>
+          On hover on "Reading Status" menu item: div behind menu item text will
+          fade to gray and cursor will turn to pointer.
+        </li>
+        <li>
+          On hover off "Reading Status" menu item: div behind menu item text
+          will fade back original color and cursor will return to default.
+        </li>
+        <li>
+          on click of "Reading Status" menu item: the dropdown menu will slide
+          up and fade out to its original, hidden position. The text of the
+          specific menu item clicked will replace the "Reading Status" text.
+        </li>
+        <li>
+          On hover on stars when previously empty: Stars will fade in with
+          yellow, the number of stars that are filled from left to right
+          directly correlates with which star is being hovered over (1st star is
+          on the left, last star is on the right). Specific star that is being
+          hovered over will scale up and cursor will turn to pointer.
+        </li>
+        <li>
+          on hover off stars when previously empty: All stars that were filled
+          with yellow will fade back to grey, specific star that was being
+          hovered on will scale back down to original size and cursor will
+          return to default.
+        </li>
+        <li>
+          hover on the stars when selection has already been made (some or all
+          stars are filled): Star being hovered on will fade in yellow if it was
+          previously unselected. The number of stars that are filled from left
+          to right directly correlates with which star is being hovered over
+          (1st star is on the left, last star is on the right). Any star that
+          was previously selected to the right of the star being hovered on, if
+          applicable, will fade to its original gray. Specific star that is
+          being hovered over will scale up and cursor will turn to pointer.
+        </li>
+        <li>
+          hover off the stars when selection has already been made (some or all
+          stars are filled): All stars that were previously selected to the
+          right of the star being hovered on, if applicable, will fade back to
+          its previously selected yellow. The specific star that was being
+          hovered on will scale back down to its original size and cursor will
+          return to default.
+        </li>
+        <li>
+          on click of stars: The stars that are filled from hover will remain
+          filled. Star that is clicked on will scale down to original size when
+          hovered off.
+        </li>
+        <li>
+          On click of a new star when a selection has already been made (some or
+          all stars are filled): The Stars that are filled from hover will
+          remain filled. Star that is clicked on will scale down to original
+          size when hovered off.
+        </li>
+        <li>
+          On click of a star that was previously selected: All stars that were
+          filled with yellow will fade back to grey.
+        </li>
+      </ul>
+
+      <h2>Loops and Modes:</h2>
+      <ul>
+        <li>"Reading Status" drop down appears as a mode</li>
+        <li>no loops</li>
+      </ul>
+
+      <h2>Extra Credit</h2>
+      <ul>
+        <li>
+          Clicking on stars (making rating) and selecting a menu item from the
+          "reading status" drop down both log to local storage so that the page
+          retains the users rating and reading status for the book.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

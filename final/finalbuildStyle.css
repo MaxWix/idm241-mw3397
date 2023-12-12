@@ -1,0 +1,257 @@
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+h4 {
+  margin: 1rem 0;
+}
+
+p {
+  margin-top: 0;
+  max-width: 750px;
+}
+
+ol {
+  margin: 0.5rem 0 0;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: aliceblue;
+  color: black;
+}
+
+div.main {
+  margin: 0 auto;
+  width: 70%;
+}
+
+link {
+  color: blue;
+}
+
+:any-link {
+  color: blue;
+}
+
+.heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+
+.category {
+  display: grid;
+  place-content: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.category-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.category-description {
+  font-size: 16px;
+}
+
+.category-books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book {
+  width: 20rem;
+  margin: 1%;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(37, 38, 43);
+  border-radius: 10px;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+/* .book:hover {
+  
+  cursor: pointer;
+} */
+
+.bookimg {
+  max-width: 95%;
+  height: auto;
+  border-radius: 10px;
+  transition: box-shadow 0.2s;
+}
+
+.bookimg:hover {
+  box-shadow: 4px 4px 3px white;
+}
+
+.book-title {
+  font-weight: bold;
+}
+
+.book-description {
+  font-size: 14px;
+}
+
+.wtrimg {
+  max-width: 15px;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+.wtrBtn {
+  background-color: rgb(102, 156, 107);
+  border-radius: 0.3em;
+  padding: 1em 1.5em 1em 1em;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  border: none;
+}
+
+span {
+  margin-left: 0.3em;
+}
+
+.wtr {
+  color: #fff;
+  font-weight: bold;
+}
+
+.dropdownCon {
+  width: 70%;
+  margin: auto;
+}
+
+.dropdown {
+  display: block;
+  background: white;
+  border-radius: 0.3em;
+  position: absolute;
+  padding: 0.5em;
+  width: 70%;
+  box-sizing: border-box;
+  transform: translateY(-1em);
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  visibility: hidden;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+ul {
+  margin: 1rem 0 0;
+  padding-left: 2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.dUl {
+  margin: 0;
+  padding: 0;
+}
+
+.buttonList div {
+  display: flex;
+  padding: 0.8em 0.8em;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  transition: all ease-out;
+}
+
+.buttonList div:hover {
+  background: #e9e9e9;
+  cursor: pointer;
+  transition: all 0.35s ease-in;
+}
+
+.container {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.btn-hover {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.btn-wrapper:hover .dropdown {
+  display: block;
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.25s ease-in;
+}
+
+/* star rating system. Credit: Bilal Rizwaan https://www.buymeacoffee.com/gitlabbilal*/
+
+.rtb {
+  margin: 0;
+  color: #fff;
+}
+
+.ratings-wrapper {
+  margin: 1rem 1rem 5rem;
+}
+
+.star-wrapper {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ratings {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin: 0.5rem 0 0 0;
+}
+
+.ratings span {
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.ratings span:hover {
+  color: orange;
+  transform: scale(1.3);
+}
+
+.ratings span:hover ~ span {
+  color: orange;
+}
+
+.ratings span[data-clicked] {
+  color: orange;
+}
+
+.ratings span[data-clicked] ~ span {
+  color: orange;
+}
